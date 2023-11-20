@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Start styles navBar */
+
+.activate a svg{
+  color: #12229D;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-list a {
+  display: flex;
+  align-items: center;
+  color: #8a8a8a;
+  transition: color 0.25s;
+}
+
+.nav-list a svg {
+  width: 3.5vw;
+  height: 3.5vh;
+  margin-right: 0.5em;
+}
+
+.nav-list a span {
+  color: #333437;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.nav-list a:hover {
+  color: #12229D;
+}
+
+.nav-options {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4em;
+  justify-content: start;
+  padding: 4vh 3vw 0 1vw;
+  background-color: #F7F7F7;
+  min-height: 100vh;
+  width: 15vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#navBar img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;  
+}
+
+/* End Styles navBar */
+
+/* -------------------------------------------------------------------------- */
+
+/* Start Styles WorkerPreviewMini */
+
+.worker-preview-mini {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em 0.8em;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #F7F7F7;
+  transition: background-color 0.25s;
+}
+
+.worker-preview-mini:hover {
+  cursor: pointer;
+  background-color: #F2F2F2;
+}
+
+.worker-preview-mini .worker-preview-mini_button-more-info {
+  transition: transform 0.15s;
+}
+
+.worker-preview-mini:hover .worker-preview-mini_button-more-info {
+  transform: translateX(5px);
+}
+
+.worker-preview-mini_profile-picture {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid #12229D;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.worker-preview-mini_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.5em;
+  width: 100%;
+  border-bottom: 1px solid #E8E8E8;
+
+}
+
+.worker-preview-mini_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.worker-preview-mini_name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.worker-preview-mini_name:hover {
+  text-decoration: underline;
+}
+
+.worker-preview-mini_info {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.6em;
+  padding-bottom: 0.5vh;
+}
+
+.worker-preview-mini_button-more-info {
+  color: #12229D;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+/* End Styles WorkerPreviewMini */
+
+/* -------------------------------------------------------------------------- */
+
+/* Start Styles WorkersPreview */
+
+.workers-preview-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: #ffffff;
+  padding: 1.2em 1em;
+  border-radius: 10px;
+}
+
+.workers-preview_title {
+  font-family: 'Poppins', sans-serif;
+  color: #333437;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.workers-preview_expand {
+  color:#12229D;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* End Styles WorkersPreview */
+
+/* -------------------------------------------------------------------------- */
+
+/* Start Styles NavWorkersPreview */
+
+#nav-preview-worker {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 2vw;
+  background-color: #F7F7F7;
+  height: 90vh;
+  width: 18vw;
+  max-width: 260px;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#nav-preview-worker_info {
+  display: flex;
+  flex-direction: column;
+  justify-content:ceter;
+  margin-top: 5%;
+  height: 100%;
+  max-height: 90vh;
+  gap: 5%;
+}
+
+/* End Styles NavWorkersPreview */
+
+/* -------------------------------------------------------------------------- */
+
+.nav-bar_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 3vh 4vw;
+  min-width: 73vw;
+  height: 6vh;
+  background-color: #F7F7F7;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.nav-bar_info-text {
+  font-size: 1.6em;
+  color: #333437; /* Cambia el color a tu preferencia */
+  font-weight: bold; /* Aplica negrita */
+  position: absolute; /* Fija la posición */
+  left: 0; /* Lo sitúa en el borde izquierdo */
+  /* Otros estilos que desees aplicar */
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252525;
+  padding: 20px;
+}
+
+/* CSS para el componente WorkerHighlight */
+
+.worker-highlight {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 500px;
+  background-color: #ffffff;
+  margin-top: 100px; /* Ajusta el margen superior según sea necesario */
+  margin-bottom: 100px; 
+}
+
+.worker-highlight-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #333437;
+  z-index: 1;
+}
+
+.worker-highlight-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #666;
+  text-align: center;
+}
+
+.worker-suggested {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.worker-suggested-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 150px;
+}
+
+.worker-suggested-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.worker-suggested-item-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 570;
+  font-size: 0.9em;
+  color: #333437;
+}
+
+.worker-suggested-item-profession {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  color: #666;
+}
+
+.modificacion-worked {
+  padding-left: 250px !important;
+  padding-right: 270px !important;
+}
+
+.bg-default{
+  background: url("./../img/landing-bck-2.png") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+}
+
+#svgelem {
+  position: relative;
+  left: 10%;
+  -webkit-transform: translateX(-20%);
+  -ms-transform: translateX(-20%);
+  transform: translateX(-20%);
+}
+
+.image-card-container{
+  height: 120px;
+}
+
+.card-height{
+  height: 140px;
+}
